@@ -1,4 +1,4 @@
-## Parallel Sorting Algorithms
+## Parallel sorting algorithms
 
 This is a collections of different parallel sorting algorithms, with some benchmarking results on 
 various array sizes.
