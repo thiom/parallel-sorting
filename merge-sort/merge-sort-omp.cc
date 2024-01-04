@@ -4,7 +4,7 @@
 
 typedef unsigned long long data_t;
 
-void psort(int n, data_t* data) {
+void merge_sort(int n, data_t* data) {
     int k = (int)(std::log2(omp_get_max_threads()));
     k = 2 << k;
     k = k >> 1;

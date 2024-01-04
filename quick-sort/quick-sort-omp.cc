@@ -12,7 +12,7 @@ data_t* median(data_t* first, data_t* mid, data_t* last) {
     return last;
 }
 
-void quicksort(data_t* first, data_t* last, int tn) {
+void q_sort(data_t* first, data_t* last, int tn) {
     if(first == last) return;
     if(tn == 1) {
         std::sort(first, last);
@@ -24,17 +24,17 @@ void quicksort(data_t* first, data_t* last, int tn) {
     data_t* gteq = std::partition(less, last, [pivot](data_t e) -> bool { return !(pivot < e); });
 
     #pragma omp task
-    quicksort(first, less, tn - 1);
+    q_sort(first, less, tn - 1);
 
     #pragma omp task
-    quicksort(gteq, last, tn - 1);
+    q_sort(gteq, last, tn - 1);
 }
 
-void psort(int n, data_t* data) {
+void quick_sort(int n, data_t* data) {
     int tn = omp_get_max_threads();
     #pragma omp parallel num_threads(tn)
     #pragma omp single
     {
-      quicksort(data, data + n, tn);
+      q_sort(data, data + n, tn);
     }
 }
