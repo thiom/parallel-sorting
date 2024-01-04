@@ -4,10 +4,12 @@ This is a collections of different parallel sorting algorithms, with some benchm
 various array sizes.
 
 - [Quick-sort for integers, multithredded with OpenMP](./quick-sort)  
-100 000: 0.03 s  
-1 000 000: 0.03 s  
-10 000 000: 0.13 s  
-100 000 000: 0.9 s
+| n | seconds |
+| ------ | ------ |
+| 100 000 | 0.03 |
+| 1 000 000 | 0.03 |
+| 10 000 000 | 0.13 |
+| 100 000 000 | 0.9 |
 
 - [Merge-sort for integers, multithredded with OpenMP](./quick-sort)  
 &nbsp;&nbsp;&nbsp;&nbsp;100 000: 0.004 s  
