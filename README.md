@@ -9,6 +9,14 @@ various array sizes.
 10 000 000: 0.13 s  
 100 000 000: 0.9 s  
 
+[Quick-sort for integers, multithredded with OpenMP](./quick-sort)  
+| n           | seconds |
+| ----------- | ------- |
+| 100 000     | 0.03    |
+| 1 000 000   | 0.03    |
+| 10 000 000  | 0.13    |
+| 100 000 000 | 0.9     |
+
 - [Merge-sort for integers, multithredded with OpenMP](./quick-sort)  
 100 000: 0.004 s  
 1 000 000: 0.02 s  
