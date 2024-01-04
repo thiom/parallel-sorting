@@ -3,13 +3,8 @@
 This is a collections of different parallel sorting algorithms, with some benchmarking results on 
 various array sizes.
 
-- [Quick-sort for integers, multithredded with OpenMP](./quick-sort)  
-100 000: 0.03 s  
-1 000 000: 0.03 s  
-10 000 000: 0.13 s  
-100 000 000: 0.9 s  
+[Quick-sort for integers, multithredded with OpenMP](./quick-sort)
 
-[Quick-sort for integers, multithredded with OpenMP](./quick-sort)  
 | n           | seconds |
 | ----------- | ------- |
 | 100 000     | 0.03    |
@@ -17,11 +12,14 @@ various array sizes.
 | 10 000 000  | 0.13    |
 | 100 000 000 | 0.9     |
 
-- [Merge-sort for integers, multithredded with OpenMP](./quick-sort)  
-100 000: 0.004 s  
-1 000 000: 0.02 s  
-10 000 000: 0.13 s  
-100 000 000: 1.07 s
+[Merge-sort for integers, multithredded with OpenMP](./merge-sort)
+
+| n           | seconds |
+| ----------- | ------- |
+| 100 000     | 0.004   |
+| 1 000 000   | 0.02    |
+| 10 000 000  | 0.13    |
+| 100 000 000 | 1.07    |
 
 The benchmarks were done on a machine with following specs:
 
