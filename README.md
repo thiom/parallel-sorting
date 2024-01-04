@@ -5,7 +5,7 @@ various array sizes.
 
 [Quick-sort for integers, multithredded with OpenMP](./quick-sort)
 
-| n integers  | seconds |
+| n           | s       |
 | ----------- | ------- |
 | 100 000     | 0.03    |
 | 1 000 000   | 0.03    |
@@ -14,7 +14,7 @@ various array sizes.
 
 [Merge-sort for integers, multithredded with OpenMP](./merge-sort)
 
-| n integers  | seconds |
+| n           | s       |
 | ----------- | ------- |
 | 100 000     | 0.004   |
 | 1 000 000   | 0.02    |
